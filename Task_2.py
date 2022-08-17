@@ -1,6 +1,5 @@
 import requests
 import os
-files = ["test_folder/test.txt", "test_folder/example.txt", "test_folder/another_one_file.txt"]
 
 class YaUploader:
     def __init__(self, token):
@@ -25,9 +24,9 @@ class YaUploader:
 
 if __name__ == '__main__':
       
-    TOKEN = ""
+    TOKEN = "" 
+    files = ["test_folder/test.txt", "test_folder/example.txt", "test_folder/another_one_file.txt"] # в качестве примера
     uploader = YaUploader(TOKEN)
     for file in files:
-        file_path = os.path.abspath(file)
-        result = uploader.upload_file(file_path)
+        result = uploader.upload_file(file)
     print("Success")
