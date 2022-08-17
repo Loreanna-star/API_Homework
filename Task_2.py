@@ -25,7 +25,7 @@ class YaUploader:
 
 if __name__ == '__main__':
       
-    TOKEN = "y0_AQAAAABTR8ArAADLWwAAAADLZeaiRmhxxQTZTHmrrdJCb5Wi_BeP4Bg" #не забыть удалить!
+    TOKEN = ""
     uploader = YaUploader(TOKEN)
     for file in files:
         file_path = os.path.abspath(file)
